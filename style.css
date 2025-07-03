@@ -333,13 +333,16 @@ footer {
 }
 
 .speaker-card img {
-  max-width: 100px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 80px;
+  padding: 5px;
 }
 
 .speaker-card h3 {
   margin: 10px 0 5px;
   color: #2e3c40;
+  text-align: center;
 }
 
 .speaker-card p {
@@ -360,9 +363,19 @@ footer {
 .speaker-person {
   display: flex;
   align-items: center;
-  
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
 }
 
+.speaker-person.vertical {
+    flex-direction: column;
+    text-align: center;
+  }
+
+.speaker-person p {
+  text-align: center;
+}
 .speaker-details {
   display: flex;
   flex-direction: column;
