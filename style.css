@@ -1,0 +1,100 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f0f4f8;
+  color: #2e3c40;
+  line-height: 1.8;
+  padding-bottom: 60px;
+}
+
+/* Header */
+header {
+  background-color: #6c7a89;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Section Headings */
+section h2 {
+  margin-bottom: 20px;
+  color: #88bdbc;
+  font-size: 1.6rem;
+}
+
+/* Blog Posts & Speakers */
+.post {
+  margin-bottom: 30px;
+}
+
+.post h3 {
+  margin-bottom: 8px;
+  color: #2e3c40;
+  font-size: 1.2rem;
+}
+
+.post p {
+  margin: 5px 0 12px 0;
+}
+
+/* Footer */
+footer {
+  background: #6c7a89;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
+}
