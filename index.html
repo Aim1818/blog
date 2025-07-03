@@ -107,72 +107,244 @@
 </section>
 
 
-
-  <section id="speakers">
+<section id="speakers">
   <h2>Guest Speakers</h2>
   <div class="speaker-grid">
 
     <!-- Foundever -->
     <div class="speaker-card">
-      <img src="speakers/foundever.png" alt="Foundever">
+      <img src="speakers/foundever.png" alt="Foundever Logo">
       <h3>Foundever Philippines</h3>
-      <ul>
-        <li><strong>Ms. Zoe Diaz de Rivera</strong> – IBPAP Representative</li>
-        <li><strong>Mr. Alman Manzano</strong> – Regional IT Director</li>
-        <li><strong>Mr. Carlo Quezon</strong> – Recruitment Marketing & Sourcing Manager</li>
-      </ul>
+      <div class="speaker-details">
+        <div class="speaker-person">
+          <img src="speakers/zoe.jpg" alt="Zoe Diaz de Rivera" class="speaker-photo">
+          <p><strong>Ms. Zoe Diaz de Rivera</strong> – IBPAP Representative</p>
+        </div>
+        <div class="speaker-person">
+          <img src="speakers/alman.jpg" alt="Alman Manzano" class="speaker-photo">
+          <p><strong>Mr. Alman Manzano</strong> – Regional IT Director</p>
+        </div>
+        <div class="speaker-person">
+          <img src="speakers/carlo.jpg" alt="Carlo Quezon" class="speaker-photo">
+          <p><strong>Mr. Carlo Quezon</strong> – Recruitment Marketing and Sourcing Manager</p>
+        </div>
+        <button class="learn-more" onclick="openModal('modal-foundever')">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Modal for Foundever -->
+    <div id="modal-foundever" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-foundever')">&times;</span>
+        <h2>Foundever Philippines – Guest Speakers</h2>
+        <div class="modal-grid">
+          <div class="modal-speaker-card">
+            <img src="speakers/zoe.jpg" alt="Zoe Diaz de Rivera" class="speaker-photo">
+            <h3>Ms. Zoe Diaz de Rivera</h3>
+            <p><strong>Position:</strong> IBPAP Representative</p>
+            <p>She discussed industry trends and how IBPAP supports the IT-BPM sector in the Philippines, emphasizing digital literacy and career readiness.</p>
+          </div>
+          <div class="modal-speaker-card">
+            <img src="speakers/alman.jpg" alt="Alman Manzano" class="speaker-photo">
+            <h3>Mr. Alman Manzano</h3>
+            <p><strong>Position:</strong> Regional IT Director</p>
+            <p>He gave a deep dive into IT infrastructure, cybersecurity, and how BPOs are transforming with automation and digital platforms.</p>
+          </div>
+          <div class="modal-speaker-card">
+            <img src="speakers/carlo.jpg" alt="Carlo Quezon" class="speaker-photo">
+            <h3>Mr. Carlo Quezon</h3>
+            <p><strong>Position:</strong> Recruitment Marketing & Sourcing Manager</p>
+            <p>He highlighted how Foundever engages future talent through innovative sourcing strategies and employer branding initiatives.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Google -->
     <div class="speaker-card">
       <img src="speakers/google.png" alt="Google">
       <h3>Google Philippines</h3>
-      <ul>
-        <li><strong>Atty. Yves Gonzalez</strong> – Head of Government Affairs & Public Policy</li>
-      </ul>
+      <div class="speaker-details">
+        <div class="speaker-person">
+          <img src="speakers/yves.jpg" alt="Atty. Yves Gonzalez" class="speaker-photo">
+          <p><strong>Atty. Yves Gonzalez</strong> – Head of Government Affairs & Public Policy</p>
+        </div>
+        <button class="learn-more" onclick="openModal('modal-google')">Learn More</button>
+      </div>
+    </div>
+
+    <!-- Modal for Google -->
+    <div id="modal-google" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-google')">&times;</span>
+        <h2>Google Philippines – Guest Speaker</h2>
+        <div class="modal-grid">
+          <div class="modal-speaker-card">
+            <img src="speakers/yves.jpg" alt="Atty. Yves Gonzalez" class="speaker-photo">
+            <h3>Atty. Yves Gonzalez</h3>
+            <p><strong>Position:</strong> Head of Government Affairs & Public Policy</p>
+            <p>Atty. Gonzalez explained how Google works with government and communities to ensure responsible tech growth and digital empowerment in the country.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Asian Development Bank -->
     <div class="speaker-card">
       <img src="speakers/adb.png" alt="ADB">
       <h3>Asian Development Bank (ADB)</h3>
-      <ul>
-        <li><strong>Mr. Matt Farley</strong> – Director, Infrastructure & Technology Division</li>
-      </ul>
+      <div class="speaker-details">
+        <div class="speaker-person">
+          <img src="speakers/matt.jpg" alt="Matt Farley" class="speaker-photo">
+          <p><strong>Mr. Matt Farley</strong> – Director, Infrastructure & Technology Division</p>
+        </div>
+        <button class="learn-more" onclick="openModal('modal-adb')">Learn More</button>
+      </div>
+    </div>
+
+    <div id="modal-adb" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-adb')">&times;</span>
+        <h2>Asian Development Bank – Guest Speaker</h2>
+        <div class="modal-grid">
+          <div class="modal-speaker-card">
+            <img src="speakers/matt.jpg" alt="Matt Farley" class="speaker-photo">
+            <h3>Mr. Matt Farley</h3>
+            <p><strong>Position:</strong> Director, Infrastructure & Technology Division</p>
+            <p>He emphasized inclusive tech development and showed how ADB uses digital innovation to support sustainable projects across Asia.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Teleperformance -->
     <div class="speaker-card">
       <img src="speakers/teleperformance.png" alt="Teleperformance">
       <h3>Teleperformance Philippines</h3>
-      <ul>
-        <li><strong>Ms. Beatrice Grace Bonjibod</strong> – Marketing Specialist</li>
-      </ul>
+      <div class="speaker-details">
+        <div class="speaker-person">
+          <img src="speakers/beatrice.jpg" alt="Beatrice Grace Bonjibod" class="speaker-photo">
+          <p><strong>Ms. Beatrice Grace Bonjibod</strong> – Marketing Specialist</p>
+        </div>
+        <button class="learn-more" onclick="openModal('modal-teleperformance')">Learn More</button>
+      </div>
+    </div>
+
+    <div id="modal-teleperformance" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-teleperformance')">&times;</span>
+        <h2>Teleperformance Philippines – Guest Speaker</h2>
+        <div class="modal-grid">
+          <div class="modal-speaker-card">
+            <img src="speakers/beatrice.jpg" alt="Beatrice Grace Bonjibod" class="speaker-photo">
+            <h3>Ms. Beatrice Grace Bonjibod</h3>
+            <p><strong>Position:</strong> Marketing Specialist</p>
+            <p>She shared how customer experience and brand engagement strategies help companies grow, emphasizing empathy and tech-driven solutions.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Kollab -->
     <div class="speaker-card">
-      <img src="speakers/kollab.png" alt="Kollab">
-      <h3>Kollab Philippines</h3>
-      <ul>
-        <li><strong>Ms. Jazmine Claire Calma</strong> – Senior Engineer, Quality Assurance</li>
-        <li><strong>Mr. Toni-jan Keith Monserrat</strong> – Senior Principal Engineer AI & Data / UI/UX Designer</li>
-        <li><strong>Mr. Ralph Vincent Regalado</strong> – Chief Scientist & Head of AI</li>
-      </ul>
+  <img src="speakers/kollab.png" alt="Kollab">
+  <h3>Kollab Philippines</h3>
+  <div class="speaker-details">
+    <div class="speaker-person">
+      <img src="speakers/jazmine.jpg" alt="Jazmine Claire Calma" class="speaker-photo">
+      <p><strong>Ms. Jazmine Claire Calma</strong> – Senior Engineer, Quality Assurance</p>
     </div>
+    <div class="speaker-person">
+      <img src="speakers/toni.jpg" alt="Toni-jan Keith Monserrat" class="speaker-photo">
+      <p><strong>Mr. Toni-jan Keith Monserrat</strong> – Senior Principal Engineer AI & Data</p>
+    </div>
+    <div class="speaker-person">
+      <img src="speakers/ralph.jpg" alt="Ralph Vincent Regalado" class="speaker-photo">
+      <p><strong>Mr. Ralph Vincent Regalado</strong> – Chief Scientist & Head of AI</p>
+    </div>
+    <div class="speaker-person">
+      <img src="speakers/miguel.jpg" alt="Miguel Siriban" class="speaker-photo">
+      <p><strong>Mr. Miguel Siriban</strong> – UI/UX Designer</p>
+    </div>
+    <button class="learn-more" onclick="openModal('modal-kollab')">Learn More</button>
+  </div>
+</div>
+
+<div id="modal-kollab" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-kollab')">&times;</span>
+    <h2>Kollab Philippines – Guest Speakers</h2>
+    <div class="modal-grid">
+      <div class="modal-speaker-card">
+        <img src="speakers/jazmine.jpg" alt="Jazmine Claire Calma" class="speaker-photo">
+        <h3>Ms. Jazmine Claire Calma</h3>
+        <p><strong>Position:</strong> Senior Engineer, Quality Assurance</p>
+        <p>She talked about ensuring the quality of tech products, sharing her experience in collaborative agile teams and tech testing processes.</p>
+      </div>
+      <div class="modal-speaker-card">
+        <img src="speakers/toni.jpg" alt="Toni-jan Keith Monserrat" class="speaker-photo">
+        <h3>Mr. Toni-jan Keith Monserrat</h3>
+        <p><strong>Position:</strong> Senior Principal Engineer AI & Data</p>
+        <p>He explored how AI and UX blend in creating human-centric systems, showing examples from Kollab’s recent innovations.</p>
+      </div>
+      <div class="modal-speaker-card">
+        <img src="speakers/ralph.jpg" alt="Ralph Vincent Regalado" class="speaker-photo">
+        <h3>Mr. Ralph Vincent Regalado</h3>
+        <p><strong>Position:</strong> Chief Scientist & Head of AI</p>
+        <p>He shared insights on AI development, ethical frameworks, and how Kollab is pioneering intelligent systems for Philippine companies.</p>
+      </div>
+      <div class="modal-speaker-card">
+        <img src="speakers/miguel.jpg" alt="Miguel Siriban" class="speaker-photo">
+        <h3>Mr. Miguel Siriban</h3>
+        <p><strong>Position:</strong> UI/UX Designer</p>
+        <p>He shared how design thinking influences product development and the importance of user feedback in UI/UX improvements at Kollab.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Microsourcing -->
     <div class="speaker-card">
       <img src="speakers/microsourcing.png" alt="Microsourcing">
       <h3>Microsourcing</h3>
-      <ul>
-        <li><strong>Ms. Haidee Enriquez</strong> – CEO</li>
-        <li><strong>Ms. Aira Omalin</strong> – Business & Talent Intelligence Advisor</li>
-      </ul>
+      <div class="speaker-details">
+        <div class="speaker-person">
+          <img src="speakers/haidee.jpg" alt="Haidee Enriquez" class="speaker-photo">
+          <p><strong>Ms. Haidee Enriquez</strong> – CEO</p>
+        </div>
+        <div class="speaker-person">
+          <img src="speakers/aira.jpg" alt="Aira Omalin" class="speaker-photo">
+          <p><strong>Ms. Aira Omalin</strong> – Business & Talent Intelligence Advisor</p>
+        </div>
+        <button class="learn-more" onclick="openModal('modal-microsourcing')">Learn More</button>
+      </div>
+    </div>
+
+    <div id="modal-microsourcing" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal-microsourcing')">&times;</span>
+        <h2>Microsourcing – Guest Speakers</h2>
+        <div class="modal-grid">
+          <div class="modal-speaker-card">
+            <img src="speakers/haidee.jpg" alt="Haidee Enriquez" class="speaker-photo">
+            <h3>Ms. Haidee Enriquez</h3>
+            <p><strong>Position:</strong> CEO</p>
+            <p>She explained her leadership approach and shared how Microsourcing builds global-ready teams from the Philippines for international clients.</p>
+          </div>
+          <div class="modal-speaker-card">
+            <img src="speakers/aira.jpg" alt="Aira Omalin" class="speaker-photo">
+            <h3>Ms. Aira Omalin</h3>
+            <p><strong>Position:</strong> Business & Talent Intelligence Advisor</p>
+            <p>She introduced data-driven strategies in talent sourcing and discussed trends in employment intelligence in a global context.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 </section>
+
 
 
 
@@ -199,6 +371,25 @@
       header.classList.remove('show-header');
     }
   });
+</script>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "flex";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
 </script>
 
 </body>
