@@ -21,7 +21,7 @@
       </div>
     </div>
   </section>
-<header>
+  <header id="main-header" class="hidden-header">
     <h1>BSCS Industrial Tour 2025</h1>
     <nav>
       <a href="#home">Home</a>
@@ -153,5 +153,20 @@
   <footer>
     <p>&copy; 2025 Aim Convocar. All rights reserved.</p>
   </footer>
+
+  <script>
+  window.addEventListener('scroll', function () {
+    const header = document.getElementById('main-header');
+    const hero = document.querySelector('.hero');
+    const heroBottom = hero.offsetHeight;
+
+    if (window.scrollY > heroBottom - 50) {
+      header.classList.add('show-header');
+    } else {
+      header.classList.remove('show-header');
+    }
+  });
+</script>
+
 </body>
 </html>

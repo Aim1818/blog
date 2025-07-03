@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#home {
+  padding-top: 100px; /* adjust based on your header height */
+}
+
+@media (max-width: 600px) {
+  #home {
+    padding-top: 120px;
+  }
+}
+
 
 html, body {
   width: 100%;
@@ -24,7 +34,7 @@ body {
   font-family: 'Quicksand', sans-serif;
   background-color: #f0f4f8;
   color: #2e3c40;
-  line-height: 1.8;
+  line-height: 1.0;
   margin: 0;
   padding: 0;
 }
@@ -32,12 +42,16 @@ body {
 
 /* Header */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #6c7a89;
   color: #fff;
-  padding: 25px 0;
+  padding: 15px 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 header h1 {
   margin-bottom: 10px;
@@ -250,3 +264,26 @@ background-color: red;
   background-color: #ffeecc;
   transform: translateX(-50%) translateY(2px);
 }
+
+/* Hide header initially */
+.hidden-header {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #6c7a89;
+  z-index: 1000;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show when scrolling */
+.show-header {
+  opacity: 1;
+  pointer-events: auto;
+}
+
