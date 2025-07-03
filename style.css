@@ -339,4 +339,21 @@ background-color: red;
   color: #247881;
 }
 
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
 
